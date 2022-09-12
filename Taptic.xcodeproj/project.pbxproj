@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6308EE6D28CFCABE00EF3AFA /* Taptic WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6308EE6C28CFCABE00EF3AFA /* Taptic WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6308EE7328CFCABE00EF3AFA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6308EE7128CFCABE00EF3AFA /* Interface.storyboard */; };
+		6308EE7528CFCABF00EF3AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6308EE7428CFCABF00EF3AFA /* Assets.xcassets */; };
+		6308EE7B28CFCABF00EF3AFA /* Taptic WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6308EE7A28CFCABF00EF3AFA /* Taptic WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6308EE8028CFCABF00EF3AFA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308EE7F28CFCABF00EF3AFA /* InterfaceController.swift */; };
+		6308EE8228CFCABF00EF3AFA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308EE8128CFCABF00EF3AFA /* ExtensionDelegate.swift */; };
+		6308EE8428CFCABF00EF3AFA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308EE8328CFCABF00EF3AFA /* NotificationController.swift */; };
+		6308EE8628CFCABF00EF3AFA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308EE8528CFCABF00EF3AFA /* ComplicationController.swift */; };
+		6308EE8828CFCABF00EF3AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6308EE8728CFCABF00EF3AFA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6308EE6E28CFCABE00EF3AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6308EE6228CFCABE00EF3AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6308EE6B28CFCABE00EF3AFA;
+			remoteInfo = "Taptic WatchKit App";
+		};
+		6308EE7C28CFCABF00EF3AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6308EE6228CFCABE00EF3AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6308EE7928CFCABF00EF3AFA;
+			remoteInfo = "Taptic WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6308EE9028CFCABF00EF3AFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6308EE7B28CFCABF00EF3AFA /* Taptic WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6308EE9428CFCABF00EF3AFA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6308EE6D28CFCABE00EF3AFA /* Taptic WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6308EE6828CFCABE00EF3AFA /* Taptic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taptic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6308EE6C28CFCABE00EF3AFA /* Taptic WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taptic WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6308EE7228CFCABE00EF3AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6308EE7428CFCABF00EF3AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6308EE7A28CFCABF00EF3AFA /* Taptic WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Taptic WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6308EE7F28CFCABF00EF3AFA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6308EE8128CFCABF00EF3AFA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6308EE8328CFCABF00EF3AFA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6308EE8528CFCABF00EF3AFA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6308EE8728CFCABF00EF3AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6308EE8928CFCABF00EF3AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6308EE8A28CFCABF00EF3AFA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6308EE7728CFCABF00EF3AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6308EE6128CFCABE00EF3AFA = {
+			isa = PBXGroup;
+			children = (
+				6308EE7028CFCABE00EF3AFA /* Taptic WatchKit App */,
+				6308EE7E28CFCABF00EF3AFA /* Taptic WatchKit Extension */,
+				6308EE6928CFCABE00EF3AFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6308EE6928CFCABE00EF3AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6308EE6828CFCABE00EF3AFA /* Taptic.app */,
+				6308EE6C28CFCABE00EF3AFA /* Taptic WatchKit App.app */,
+				6308EE7A28CFCABF00EF3AFA /* Taptic WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6308EE7028CFCABE00EF3AFA /* Taptic WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6308EE7128CFCABE00EF3AFA /* Interface.storyboard */,
+				6308EE7428CFCABF00EF3AFA /* Assets.xcassets */,
+			);
+			path = "Taptic WatchKit App";
+			sourceTree = "<group>";
+		};
+		6308EE7E28CFCABF00EF3AFA /* Taptic WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6308EE7F28CFCABF00EF3AFA /* InterfaceController.swift */,
+				6308EE8128CFCABF00EF3AFA /* ExtensionDelegate.swift */,
+				6308EE8328CFCABF00EF3AFA /* NotificationController.swift */,
+				6308EE8528CFCABF00EF3AFA /* ComplicationController.swift */,
+				6308EE8728CFCABF00EF3AFA /* Assets.xcassets */,
+				6308EE8928CFCABF00EF3AFA /* Info.plist */,
+				6308EE8A28CFCABF00EF3AFA /* PushNotificationPayload.apns */,
+			);
+			path = "Taptic WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6308EE6728CFCABE00EF3AFA /* Taptic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6308EE9528CFCABF00EF3AFA /* Build configuration list for PBXNativeTarget "Taptic" */;
+			buildPhases = (
+				6308EE6628CFCABE00EF3AFA /* Resources */,
+				6308EE9428CFCABF00EF3AFA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6308EE6F28CFCABE00EF3AFA /* PBXTargetDependency */,
+			);
+			name = Taptic;
+			productName = Taptic;
+			productReference = 6308EE6828CFCABE00EF3AFA /* Taptic.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		6308EE6B28CFCABE00EF3AFA /* Taptic WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6308EE9128CFCABF00EF3AFA /* Build configuration list for PBXNativeTarget "Taptic WatchKit App" */;
+			buildPhases = (
+				6308EE6A28CFCABE00EF3AFA /* Resources */,
+				6308EE9028CFCABF00EF3AFA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6308EE7D28CFCABF00EF3AFA /* PBXTargetDependency */,
+			);
+			name = "Taptic WatchKit App";
+			productName = "Taptic WatchKit App";
+			productReference = 6308EE6C28CFCABE00EF3AFA /* Taptic WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6308EE7928CFCABF00EF3AFA /* Taptic WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6308EE8D28CFCABF00EF3AFA /* Build configuration list for PBXNativeTarget "Taptic WatchKit Extension" */;
+			buildPhases = (
+				6308EE7628CFCABF00EF3AFA /* Sources */,
+				6308EE7728CFCABF00EF3AFA /* Frameworks */,
+				6308EE7828CFCABF00EF3AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Taptic WatchKit Extension";
+			productName = "Taptic WatchKit Extension";
+			productReference = 6308EE7A28CFCABF00EF3AFA /* Taptic WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6308EE6228CFCABE00EF3AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					6308EE6728CFCABE00EF3AFA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					6308EE6B28CFCABE00EF3AFA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					6308EE7928CFCABF00EF3AFA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 6308EE6528CFCABE00EF3AFA /* Build configuration list for PBXProject "Taptic" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6308EE6128CFCABE00EF3AFA;
+			productRefGroup = 6308EE6928CFCABE00EF3AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6308EE6728CFCABE00EF3AFA /* Taptic */,
+				6308EE6B28CFCABE00EF3AFA /* Taptic WatchKit App */,
+				6308EE7928CFCABF00EF3AFA /* Taptic WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6308EE6628CFCABE00EF3AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6308EE6A28CFCABE00EF3AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6308EE7528CFCABF00EF3AFA /* Assets.xcassets in Resources */,
+				6308EE7328CFCABE00EF3AFA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6308EE7828CFCABF00EF3AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6308EE8828CFCABF00EF3AFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6308EE7628CFCABF00EF3AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6308EE8428CFCABF00EF3AFA /* NotificationController.swift in Sources */,
+				6308EE8628CFCABF00EF3AFA /* ComplicationController.swift in Sources */,
+				6308EE8228CFCABF00EF3AFA /* ExtensionDelegate.swift in Sources */,
+				6308EE8028CFCABF00EF3AFA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6308EE6F28CFCABE00EF3AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6308EE6B28CFCABE00EF3AFA /* Taptic WatchKit App */;
+			targetProxy = 6308EE6E28CFCABE00EF3AFA /* PBXContainerItemProxy */;
+		};
+		6308EE7D28CFCABF00EF3AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6308EE7928CFCABF00EF3AFA /* Taptic WatchKit Extension */;
+			targetProxy = 6308EE7C28CFCABF00EF3AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6308EE7128CFCABE00EF3AFA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6308EE7228CFCABE00EF3AFA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6308EE8B28CFCABF00EF3AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6308EE8C28CFCABF00EF3AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6308EE8E28CFCABF00EF3AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79MV6689QP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Taptic WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Taptic WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.eoin.Taptic.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		6308EE8F28CFCABF00EF3AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79MV6689QP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Taptic WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Taptic WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.eoin.Taptic.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		6308EE9228CFCABF00EF3AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79MV6689QP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Taptic_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Taptic WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.eoin.Taptic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		6308EE9328CFCABF00EF3AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79MV6689QP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Taptic_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Taptic WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.eoin.Taptic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		6308EE9628CFCABF00EF3AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79MV6689QP;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.eoin.Taptic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6308EE9728CFCABF00EF3AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79MV6689QP;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.eoin.Taptic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6308EE6528CFCABE00EF3AFA /* Build configuration list for PBXProject "Taptic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6308EE8B28CFCABF00EF3AFA /* Debug */,
+				6308EE8C28CFCABF00EF3AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6308EE8D28CFCABF00EF3AFA /* Build configuration list for PBXNativeTarget "Taptic WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6308EE8E28CFCABF00EF3AFA /* Debug */,
+				6308EE8F28CFCABF00EF3AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6308EE9128CFCABF00EF3AFA /* Build configuration list for PBXNativeTarget "Taptic WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6308EE9228CFCABF00EF3AFA /* Debug */,
+				6308EE9328CFCABF00EF3AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6308EE9528CFCABF00EF3AFA /* Build configuration list for PBXNativeTarget "Taptic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6308EE9628CFCABF00EF3AFA /* Debug */,
+				6308EE9728CFCABF00EF3AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6308EE6228CFCABE00EF3AFA /* Project object */;
+}
