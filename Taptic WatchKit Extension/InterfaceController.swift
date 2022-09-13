@@ -13,31 +13,36 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     
     @IBOutlet weak var group: WKInterfaceGroup!
     @IBOutlet weak var emojiLabel: WKInterfaceLabel!
-    var value = 0
     let emojiArray = ["😇","🥴","🤮","🤢","🤠","😵‍💫","🥳","🥸","🤪","🗿","😁","😎","😶","🥰","😍","😜","😝","😛","😋","🤩","🫠","🫡","🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐻‍❄️","🐨","🐯","🐮","🦁","🐷","🐸","🐵","🐧","🐙","🦈"]
+    var value = Int()
+    var emojiMode = true
+    var colourMode = false
     
     override func awake(withContext context: Any?) {
-        // Configure interface objects here.
         super.awake(withContext: context)
         crownSequencer.delegate = self
         crownSequencer.focus()
-        print("\(emojiArray.count)")
     }
     
     func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
-        value = Int.random(in: 0..<emojiArray.count)
-        WKInterfaceDevice.current().play(.success)
-        print(value)
-        emojiLabel.setText("\(emojiArray[value])")
+        changeEmoji()
+        WKInterfaceDevice.current().play(.directionUp)
+        
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
+        if emojiMode {
+            changeEmoji()
+        }
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
     }
 
+    private func changeEmoji() {
+        value = Int.random(in: 0..<emojiArray.count)
+        emojiLabel.setText("\(emojiArray[value])")
+    }
     
 }
