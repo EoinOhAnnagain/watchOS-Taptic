@@ -13,20 +13,22 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     
     @IBOutlet weak var group: WKInterfaceGroup!
     @IBOutlet weak var emojiLabel: WKInterfaceLabel!
-    var value = 1
+    var value = 0
+    let emojiArray = ["😇","🥴","🤮","🤢","🤠","😵‍💫","🥳","🥸","🤪","🗿","😁","😎","😶","🥰","😍","😜","😝","😛","😋","🤩","🫠","🫡","🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐻‍❄️","🐨","🐯","🐮","🦁","🐷","🐸","🐵","🐧","🐙","🦈"]
     
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         super.awake(withContext: context)
         crownSequencer.delegate = self
         crownSequencer.focus()
+        print("\(emojiArray.count)")
     }
     
     func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
-        value = Int.random(in: 0...64)
+        value = Int.random(in: 0..<emojiArray.count)
         WKInterfaceDevice.current().play(.success)
         print(value)
-        emojiLabel.setText("Value: \(value)")
+        emojiLabel.setText("\(emojiArray[value])")
     }
     
     override func willActivate() {

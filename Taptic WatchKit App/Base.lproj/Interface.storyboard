@@ -13,7 +13,7 @@
                     <items>
                         <group width="1" alignment="left" radius="0.0" id="ilB-BC-sHC">
                             <items>
-                                <label width="1" height="1" alignment="left" text="Value: " textAlignment="center" id="RUT-5L-3mN"/>
+                                <label width="1" height="1" alignment="left" text="." textAlignment="center" id="RUT-5L-3mN"/>
                             </items>
                         </group>
                     </items>
