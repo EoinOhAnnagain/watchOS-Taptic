@@ -13,7 +13,9 @@
                     <items>
                         <group width="1" alignment="left" radius="0.0" id="ilB-BC-sHC">
                             <items>
-                                <label width="1" height="1" alignment="left" text="." textAlignment="center" id="RUT-5L-3mN"/>
+                                <label width="1" height="1" alignment="left" text="🦈" textAlignment="center" id="RUT-5L-3mN">
+                                    <fontDescription key="font" type="system" pointSize="110"/>
+                                </label>
                             </items>
                         </group>
                     </items>
