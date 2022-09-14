@@ -17,8 +17,9 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     private var value = Int()
     private var emojiMode = true
     private var colourMode = false
-    private let haptics: [WKHapticType] = [.click,.success,.failure]
-    private var hapticChoice: WKHapticType = .failure
+    private let haptics: [WKHapticType] = [.click,.success,.failure,.directionDown,.directionUp,.notification,.retry,.start,.stop]
+    private var hapticChoice: WKHapticType = .click
+    private var temp = 0
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -32,6 +33,11 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     }
     
     func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?) {
+        //Testing for haptics
+        //temp += 1
+        //hapticChoice = haptics[temp]
+        //print("Next is: \(temp)")
+        
         hapticChoice = haptics[Int.random(in: 0..<haptics.count)]
     }
     
