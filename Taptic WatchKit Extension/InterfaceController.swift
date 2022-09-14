@@ -18,7 +18,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     private var emojiMode = true
     private var colourMode = false
     private let haptics: [WKHapticType] = [.click,.success,.failure]
-    private var hapticChoice: WKHapticType = .success
+    private var hapticChoice: WKHapticType = .failure
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
