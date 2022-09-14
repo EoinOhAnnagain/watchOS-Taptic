@@ -13,10 +13,12 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     
     @IBOutlet weak var group: WKInterfaceGroup!
     @IBOutlet weak var emojiLabel: WKInterfaceLabel!
-    let emojiArray = ["😇","🥴","🤮","🤢","🤠","😵‍💫","🥳","🥸","🤪","🗿","😁","😎","😶","🥰","😍","😜","😝","😛","😋","🤩","🫠","🫡","🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐻‍❄️","🐨","🐯","🐮","🦁","🐷","🐸","🐵","🐧","🐙","🦈"]
-    var value = Int()
-    var emojiMode = true
-    var colourMode = false
+    private let emojiArray = ["😇","🥴","🤮","🤢","🤠","😵‍💫","🥳","🥸","🤪","🗿","😁","😎","😶","🥰","😍","😜","😝","😛","😋","🤩","🫠","🫡","🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐻‍❄️","🐨","🐯","🐮","🦁","🐷","🐸","🐵","🐧","🐙","🦈"]
+    private var value = Int()
+    private var emojiMode = true
+    private var colourMode = false
+    private let haptics: [WKHapticType] = [.click,.success,.failure]
+    private var hapticChoice: WKHapticType = .success
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -26,8 +28,11 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     
     func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
         changeEmoji()
-        WKInterfaceDevice.current().play(.directionUp)
-        
+        WKInterfaceDevice.current().play(hapticChoice)
+    }
+    
+    func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?) {
+        hapticChoice = haptics[Int.random(in: 0..<haptics.count)]
     }
     
     override func willActivate() {
