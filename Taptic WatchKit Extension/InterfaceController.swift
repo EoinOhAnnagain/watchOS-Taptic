@@ -20,6 +20,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     private let haptics: [WKHapticType] = [.success,.failure,.directionDown,.directionUp,.notification,.retry,.start,.stop]
     private var hapticChoice: WKHapticType = .failure
     //private var temp = 0
+    @IBOutlet weak var tapped: WKTapGestureRecognizer!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -45,6 +46,10 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         if emojiMode {
             changeEmoji()
         }
+    }
+    
+    @IBAction func tapAction(_ sender: Any) {
+        print("User Tapped")
     }
     
     override func didDeactivate() {

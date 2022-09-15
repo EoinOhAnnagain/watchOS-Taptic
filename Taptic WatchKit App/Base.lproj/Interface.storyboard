@@ -17,11 +17,19 @@
                                     <fontDescription key="font" type="system" pointSize="110"/>
                                 </label>
                             </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="sNt-5l-GqH">
+                                    <connections>
+                                        <action selector="tapAction:" destination="AgC-eL-Hgc" id="ANx-4g-4y1"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
                         </group>
                     </items>
                     <connections>
                         <outlet property="emojiLabel" destination="RUT-5L-3mN" id="BXC-67-g9v"/>
                         <outlet property="group" destination="ilB-BC-sHC" id="1Jb-pc-059"/>
+                        <outlet property="tapped" destination="sNt-5l-GqH" id="xvB-fO-GlW"/>
                     </connections>
                 </controller>
             </objects>
