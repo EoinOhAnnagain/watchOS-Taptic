@@ -17,6 +17,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     private var value = Int()
     private var emojiMode = true
     private var colourMode = false
+    private var currentHapticMode = 8;
     private let haptics: [WKHapticType] = [.success,.failure,.directionDown,.directionUp,.notification,.retry,.start,.stop]
     private var hapticChoice: WKHapticType = .failure
     //private var temp = 0
@@ -38,8 +39,9 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         //temp += 1
         //hapticChoice = haptics[temp]
         //print("Next is: \(temp)")
-        
-        hapticChoice = haptics[Int.random(in: 0..<haptics.count)]
+        if currentHapticMode == 8 {
+            hapticChoice = haptics[Int.random(in: 0..<haptics.count)]
+        }
     }
     
     override func willActivate() {
@@ -50,6 +52,15 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     
     @IBAction func tapAction(_ sender: Any) {
         print("User Tapped")
+        if currentHapticMode == 8 {
+            currentHapticMode = 0
+        } else {
+            currentHapticMode += 1
+        }
+        if currentHapticMode != 8 {
+            hapticChoice = haptics[currentHapticMode]
+            WKInterfaceDevice.current().play(hapticChoice)
+        }
     }
     
     override func didDeactivate() {
